@@ -1,18 +1,5 @@
-"""
-Flask backend for the product catalog + AI recommendation demo,
-structured to run as a Vercel Serverless Function.
-
-Vercel's Python runtime detects a WSGI-compatible `app` object in this
-file and wraps it automatically — no extra handler code needed.
-
-Endpoints (note the /api prefix matches this file's location):
-  GET  /api/products
-  POST /api/recommend
-  GET  /api/health
-"""
-
 import json
-import os
+import os, sys
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS
